@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common BananaDroid stuff
 $(call inherit-product, vendor/banana/config/common.mk)
-BANANA_MAINTAINER := Ennnnn's
+BANANA_MAINTAINER := bilizoekdev
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
