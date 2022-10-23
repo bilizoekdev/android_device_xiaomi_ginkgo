@@ -23,15 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common BananaDroid stuff
-$(call inherit-product, vendor/banana/config/common.mk)
-BANANA_MAINTAINER := bilizoekdev
+# Inherit some common Arcana stuff
+$(call inherit-product, vendor/aosp/config/common.mk)
+
+ARCANA_MAINTAINER := zacky
+TARGET_SUPPORTS_BLUR := false
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_NOW_PLAYING := true
+USE_PIXEL_CHARGER_IMAGES := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
 
 # Device identifier
-PRODUCT_NAME := banana_ginkgo
+PRODUCT_NAME := aosp_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
